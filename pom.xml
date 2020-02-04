@@ -6,7 +6,7 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ssm Maven Webapp</name>
-	<url>http://github.com/liyifeng1994/ssm</url>
+	<url>http://github.com/xiabin/ssm</url>
 	<dependencies>
 		<!-- 单元测试 -->
 		<dependency>
@@ -142,5 +142,14 @@
 	</dependencies>
 	<build>
 		<finalName>ssm</finalName>
+		<plugins>
+			<!--jetty插件-->
+			<plugin>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.3.10.v20160621</version>
+			</plugin>
+		</plugins>
+
 	</build>
 </project>
